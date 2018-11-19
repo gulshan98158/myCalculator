@@ -18,7 +18,7 @@ public class MainActivity_calculator extends AppCompatActivity {
         }
 
         public double division(double i, double j){
-            return (i/j);
+            return (i*j);
         }
 
     protected void onCreate(Bundle savedInstanceState) {
