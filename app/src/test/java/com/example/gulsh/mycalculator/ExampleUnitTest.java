@@ -178,10 +178,10 @@ public class ExampleUnitTest {
         @Test
         // Test 10
 
-        public void testDivision_2and2_1() throws Exception {
+        public void testDivision_1and1_1() throws Exception {
             // Arrange
-            double i = 2;
-            double j = 2;
+            double i = 1;
+            double j = 1;
 
             // Act
             double result = c.division(i, j);
@@ -194,10 +194,10 @@ public class ExampleUnitTest {
         @Test
         // Test 11
 
-        public void testDivision_12And6_2() throws Exception {
+        public void testDivision_2And1_2() throws Exception {
             //  Arrange
-            double i = 12;
-            double j = 6;
+            double i = 2;
+            double j = 1;
 
             // Act
             double result = c.division(i, j);
@@ -210,16 +210,16 @@ public class ExampleUnitTest {
         @Test
         // Test 12
 
-        public void testDivision_15And3Point5() throws Exception {
+        public void testDivision_9And3Point3() throws Exception {
             // Arrange
-            double i = 15;
+            double i = 9;
             double j = 3;
 
             //  Act
             double result = c.division(i, j);
 
             //  Assert
-            assertEquals(5, result,0);
+            assertEquals(3, result,0);
         }
 
 
