@@ -86,25 +86,7 @@ public class ExampleUnitTest {
             assertEquals(-1.7, result, 1);
         }
 
-        @Test
-        // Test Identifier: 1.4
-        // Test Description: Adding 9999999999 and 9999999999
-        // Method of Execution: Automated
-        // Input Data: 9999999999,9999999999
-        // Expected Output: 19999999998
-
-        public void testAddition_99999999999_1999999998() throws Exception {
-            // 1. Arrange
-            double i = 999999999;
-            double j = 999999999;
-
-            // 2. Act
-            double result = c.addition(i, j);
-
-            // 3. Assert
-            assertEquals(1999999998, result, 1);
-        }
-
+      
 
         // TEST CASES FOR SUBTRACTION
 
