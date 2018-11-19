@@ -13,7 +13,6 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
 
 
-    //Member variable
         MainActivity_calculator c;
 
         @Before
@@ -22,328 +21,205 @@ public class ExampleUnitTest {
             c=new MainActivity_calculator();
         }
 
-
-        // TEST CASES FOR ADDITION
-
+    // TEST CASES FOR ADDITION
         @Test
-        // Test Identifier: 1.1
-        // Test Description: Adding 5 and 5 (2 positive numbers)
-        // Method of Execution: Automated
-        // Input Data: 5,5
-        // Expected Output: 10.0
-        // Observed Output: 10.0
+        //test 1
 
-        public void testAddition_input5and5_output10() throws Exception {
-            // 1. Arrange
-            double i = 5;
-            double j = 5;
+        public void testAddition_input4and4_output8() throws Exception {
+            //  Arrange
+            double i = 4;
+            double j = 4;
 
-            // 2. Act
+            //  Act
             double result = c.addition(i, j);
 
-            // 3. Assert
-            assertEquals(10.0, result,1);
+            // Assert
+            assertEquals(8, result,0);
         }
 
         @Test
-        // Test Identifier: 1.2
-        // Test Description: Adding 0 and 5
-        // Method of Execution: Automated
-        // Input Data: 0,5
-        // Expected Output: 5.0
+        //test 2
 
 
-        public void testAddition_input0and5_output5() throws Exception {
-            // 1. Arrange
+        public void testAddition_input0and4_output4() throws Exception {
+            //  Arrange
             double i = 0;
-            double j = 5;
+            double j = 4;
 
-            // 2. Act
+            // Act
             double result = c.addition(i, j);
 
-            // 3. Assert
-            assertEquals(5.0, result,1);
+            //  Assert
+            assertEquals(4.0, result,0);
         }
 
 
 
         @Test
-        // Test Identifier: 1.3
-        // Test Description: Adding 1.0 and -2.7 (adding 2 float numbers)
-        // Method of Execution: Automated
-        // Input Data: 1.0, -2.7
-        // Expected Output: -1.7.0
+        //test 3
 
-        public void testAddition_oneAndNegativeTwoPointSeven_negativeOnePointSeven() throws Exception {
-            // 1. Arrange
-            double i = 1.0;
-            double j = -2.7;
+        public void testAddition_twoAndNegativeTwoPointTwo_negativeZeroPointTwo() throws Exception {
+            //  Arrange
+            double i = 2.0;
+            double j = -2.2;
 
-            // 2. Act
+
+            //  Act
             double result = c.addition(i, j);
 
-            // 3. Assert
-            assertEquals(-1.7, result, 1);
+            // Assert
+            assertEquals(-0.2, result,1);
         }
 
-      
+
 
         // TEST CASES FOR SUBTRACTION
 
         @Test
-        // Test Identifier: 2.1
-        // Test Description: Subtracting 10 from 8 (2 positive numbers)
-        // Method of Execution: Automated
-        // Input Data: 10,8
-        // Expected Output: 2.0
+        //test 4
 
-        public void testSubtraction_10and8_2() throws Exception {
-            // 1. Arrange
-            double i = 10;
-            double j = 8;
-
-            // 2. Act
-            double result = c.subtraction(i, j);
-
-            // 3. Assert
-            assertEquals(2.0, result,1 );
-        }
-
-        @Test
-        // Test Identifier: 2.2
-        // Test Description: Subtracting -12 from -5 (2 negative numbers)
-        // Method of Execution: Automated
-        // Input Data: -12,-5
-        // Expected Output: -7.0
-
-        public void testSubtraction_negative12And5_negative7() throws Exception {
-            // 1. Arrange
-            double i = -12;
-            double j = -5;
-
-            // 2. Act
-            double result = c.subtraction(i, j);
-
-            // 3. Assert
-            assertEquals(-7.0, result, 1);
-        }
-
-        @Test
-        // Test Identifier: 2.3
-        // Test Description: Subtracting 0 from 0
-        // Method of Execution: Automated
-        // Input Data: 0,0
-        // Expected Output: 0.0
-
-        public void testSubtraction_0and0_0() throws Exception {
-            // 1. Arrange
-            double i = 0;
-            double j = 0;
-
-            // 2. Act
-            double result = c.subtraction(i, j);
-
-            // 3. Assert
-            assertEquals(0.0, result,1);
-        }
-
-        @Test
-        // Test Identifier: 2.4
-        // Test Description: Subtracting 0.25 from 0 (subtracting from zero)
-        // Method of Execution: Automated
-        // Input Data: 0.25,0
-        // Expected Output: 0.25
-
-
-        public void testSubtraction_0andNegativePoint25_Point25() throws Exception {
-            // 1. Arrange
-            double i = 0;
-            double j = -0.25;
-
-            // 2. Act
-            double result = c.subtraction(i, j);
-
-            // 3. Assert
-            assertEquals(0.25, result,1);
-        }
-
-        @Test
-        // Test Identifier: 2.5
-        // Test Description: Subtracting 3 from -7
-        // Method of Execution: Automated
-        // Input Data: 3,-7
-        // Expected Output: -10.0
-
-        public void testSubtraction3_negative7and3_negative10() throws Exception {
-            // 1. Arrange
-            double i = -7;
-            double j = 3;
-
-            // 2. Act
-            double result = c.subtraction(i, j);
-
-            // 3. Assert
-            assertEquals(-10, result,1);
-        }
-
-
-        // TEST CASES FOR MULTIPLICATION
-
-        @Test
-        // Test Identifier: 3.1
-        // Test Description: Multiplying 200 by 2
-        // Method of Execution: Automated
-        // Input Data: 200,2
-        // Expected Output: 400.0
-
-        public void testMultiplication_200And2_400() throws Exception {
-            // 1. Arrange
-            double i = 200;
+        public void testSubtraction_3and2_1() throws Exception {
+            //  Arrange
+            double i = 3;
             double j = 2;
+
+            // Act
+            double result = c.subtraction(i, j);
+
+            //  Assert
+            assertEquals(1.0, result,0 );
+        }
+
+        @Test
+        //test 5
+
+        public void testSubtraction_negative11And4_negative7() throws Exception {
+            //  Arrange
+            double i = -11;
+            double j = -4;
+
+            //  Act
+            double result = c.subtraction(i, j);
+
+            // Assert
+            assertEquals(-7.0, result,0);
+        }
+
+
+
+    @Test
+    // Test 6
+
+    public void testSubtraction3_negative7and4_negative10() throws Exception {
+        // Arrange
+        double i = -7;
+        double j = 4;
+
+        //  Act
+        double result = c.subtraction(i, j);
+
+        //  Assert
+        assertEquals(-11, result,0);
+    }
+
+
+
+
+    // TEST CASES FOR MULTIPLICATION
+
+        @Test
+        // Test 7
+
+        public void testMultiplication_100And10_1000() throws Exception {
+            // 1. Arrange
+            double i = 100;
+            double j = 10;
 
             // 2. Act
             double result = c.multiplication(i, j);
 
             // 3. Assert
-            assertEquals(400.0, result,1);
+            assertEquals(1000.0, result,0);
         }
 
         @Test
-        // Test Identifier: 3.2
-        // Test Description: Multiplying -15 by -3
-        // Method of Execution: Automated
-        // Input Data: -15,-3
-        // Expected Output: 45.0
-
-        public void testMultiplication_Negative15_Negative3_Positive45() throws Exception {
+        // Test 8
+        public void testMultiplication_Negative2_Negative3_Positive6() throws Exception {
             // 1. Arrange
-            double i = -15;
+            double i = -2;
             double j = -3;
 
             // 2. Act
             double result = c.multiplication(i, j);
 
             // 3. Assert
-            assertEquals(45.0, result,1);
+            assertEquals(6.0, result,0);
         }
 
         @Test
-        // Test Identifier: 3.3
-        // Test Description: Multiplying 0 by -1
-        // Method of Execution: Automated
-        // Input Data: 0,-1
-        // Expected Output: 0.0
+        // Test 9
 
-        public void testMultiplication_0AndNegative1_0() throws Exception {
-            // 1. Arrange
+        public void testMultiplication_0AndNegative5_0() throws Exception {
+            //  Arrange
             double i = 0;
-            double j = -1;
+            double j = -5;
 
-            // 2. Act
+            // Act
             double result = c.multiplication(i, j);
 
-            // 3. Assert
-            assertEquals(0.0, result,1);
+            // Assert
+            assertEquals(0.0, result,0);
         }
 
-        @Test
-        // Test Identifier: 3.4
-        // Test Description: Multiplying 5 by -7
-        // Method of Execution: Automated
-        // Input Data: 5,-7
-        // Expected Output: -35.0
-
-        public void testMultiplication_5AndNegative7_negative35() throws Exception {
-            // 1. Arrange
-            double i = 5;
-            double j = -7;
-
-            // 2. Act
-            double result = c.multiplication(i, j);
-
-            // 3. Assert
-            assertEquals(-35.0, result,1);
-        }
-
-        @Test
-        // Test Identifier: 3.5
-        // Test Description: Multiplying 0 by 0
-        // Method of Execution: Automated
-        // Input Data: 0,0
-        // Expected Output: -35.0
-
-        public void testMultiplication_0and0_0() throws Exception {
-            // 1. Arrange
-            double i = 0;
-            double j = 0;
-
-            // 2. Act
-            double result = c.multiplication(i, j);
-
-            // 3. Assert
-            assertEquals(0.0, result,1);
-        }
 
 
         // TEST CASES FOR DIVISION
 
         @Test
-        // Test Identifier: 4.1
-        // Test Description: Dividing 20 by 5
-        // Method of Execution: Automated
-        // Input Data: 20,5
-        // Expected Output: 0
+        // Test 10
 
-        public void testDivision_1and1_1() throws Exception {
-            // 1. Arrange
-            double i = 1;
-            double j = 1;
-
-            // 2. Act
-            double result = c.division(i, j);
-
-            // 3. Assert
-            assertEquals(1, result,1);
-        }
-
-
-        @Test
-        // Test Identifier: 4.2
-        // Test Description: Dividing 0 by 3
-        // Method of Execution: Automated
-        // Input Data: 0,3
-        // Expected Output: 0.0
-
-        public void testDivision_2And1_2() throws Exception {
-            // 1. Arrange
+        public void testDivision_2and2_1() throws Exception {
+            // Arrange
             double i = 2;
-            double j = 1;
+            double j = 2;
 
-            // 2. Act
+            // Act
             double result = c.division(i, j);
 
-            // 3. Assert
-            assertEquals(2, result,1);
+            // Assert
+            assertEquals(1, result,0);
         }
 
 
         @Test
-        // Test Identifier: 4.3
-        // Test Description: Dividing -25 by -10
-        // Method of Execution: Automated
-        // Input Data: -25,-10
-        // Expected Output: 2.5
+        // Test 11
 
-        public void testDivision_9And3Point3() throws Exception {
-            // 1. Arrange
-            double i = 9;
+        public void testDivision_12And6_2() throws Exception {
+            //  Arrange
+            double i = 12;
+            double j = 6;
+
+            // Act
+            double result = c.division(i, j);
+
+            //  Assert
+            assertEquals(2, result,0);
+        }
+
+
+        @Test
+        // Test 12
+
+        public void testDivision_15And3Point5() throws Exception {
+            // Arrange
+            double i = 15;
             double j = 3;
 
-            // 2. Act
+            //  Act
             double result = c.division(i, j);
 
-            // 3. Assert
-            assertEquals(3, result,1);
+            //  Assert
+            assertEquals(5, result,0);
         }
 
 
